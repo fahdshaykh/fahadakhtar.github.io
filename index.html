@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Fahad Akhtar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Fahad Akhtar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Fahad Akhtar profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Fahad Akhtar</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/fahad-akhtar.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="window.location.hash='contact';">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/fahdshaykh'"
+          />
+          <img
+            src="./assets/github_light.png"
+            src-light="./assets/github_light.png"
+            src-dark="./assets/github_dark.png"
+            alt="My github profile"
+            class="icon github-icon"
+            onclick="location.href='https://github.com/fahdshaykh'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience_light.png"
+                src-light="./assets/experience_light.png"
+                src-dark="./assets/experience_dark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>5+ years <br />Backend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education_light.png"
+                src-light="./assets/education_light.png"
+                src-dark="./assets/education_dark.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A highly skilled Laravel Developer with four years of experience in web development. Proficient in Laravel, PHP, MySQL, and front-end technologies. Proven problem-solving abilities, teamwork, and adaptability. Successful track record in delivering diverse projects, from e-commerce to custom web applications. Eager to contribute expertise to innovative projects.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Vue.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JQuery</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MYSQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Laravel</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CodeIgniter</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Restful API</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Redis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/salvafastfood.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Salva Fast Food</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/fahdshaykh/Salva_Fast_Food'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://salvafastfood.co.uk/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/taxihub.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TaxiHub</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/developerabdulwahid/taxihub.uk'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://taxihub.uk/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/taxihub.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">alphabiko</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://alphabiko.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/property.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">property accounts</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ampr.net.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ampr.net</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://portal.ampr.org/networks.php'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/azoozy.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Azoozy (job portal)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://azoozy.com/en'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/billiards.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Billiards snooker & pool section</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/doorstep.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Doorstep</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/diary-master.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Diary Master</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://diarymaster.co.uk/login/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email_light.png"
+            src-light="./assets/email_light.png"
+            src-dark="./assets/email_dark.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:fahdshaykh3@gmail.com">fahdshaykh3@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/whatsapp_light.png"
+            src-light="./assets/whatsapp_light.png"
+            src-dark="./assets/whatsapp_dark.png"
+            alt="My whatsapp profile"
+            class="icon whatsapp-icon"
+            onclick="location.href='https://wa.me/3200995447'"
+          />
+          <p><a href="https://wa.me/3200995447">+923200995447</a></p>
+        </div>
+      </div>
+    </section>
+    <div id="socials-container-footer">
+      <img
+        src="./assets/twitter_light.png"
+        src-light="./assets/twitter_light.png"
+        src-dark="./assets/twitter_dark.png"
+        alt="My twitter profile"
+        class="icon twitter-icon"
+        onclick="location.href='https://twitter.com/FahdShaykh'"
+      />
+      <img
+        src="./assets/facebook_light.png"
+        src-light="./assets/facebook_light.png"
+        src-dark="./assets/facebook_dark.png"
+        alt="My facebook profile"
+        class="icon facebook-icon"
+        onclick="location.href='https://www.facebook.com/fahdshaykh'"
+      />
+      <img
+        src="./assets/linkedin_light.png"
+        src-light="./assets/linkedin_light.png"
+        src-dark="./assets/linkedin_dark.png"
+        alt="My LinkedIn profile"
+        class="icon linkedin-icon"
+        onclick="location.href='https://www.linkedin.com/in/fahdshaykh'"
+      />
+      <img
+        src="./assets/instagram_light.png"
+        src-light="./assets/instagram_light.png"
+        src-dark="./assets/instagram_dark.png"
+        alt="My instagram profile"
+        class="icon instagram-icon"
+        onclick="location.href='https://www.instagram.com/fahdshaykh'"
+      />
+    </div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Fahad Akhtar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
