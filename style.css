@@ -54,6 +54,10 @@ p {
   color: var(--secondary-color-2);
 }
 
+li {
+  color: var(--secondary-color-2);
+}
+
 /* TRANSITION */
 
 a,
@@ -411,6 +415,9 @@ article .icon {
   cursor: default;
 }
 
+.experience-learned {
+  text-align: left;
+}
 /* PROJECTS SECTION */
 
 #projects {
